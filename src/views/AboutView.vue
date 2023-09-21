@@ -15,7 +15,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .contact {
   font-family: 'Arial', sans-serif;
   max-width: 600px;

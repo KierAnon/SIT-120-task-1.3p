@@ -3,9 +3,10 @@ import PortfolioPiece from '../components/PortfolioPiece.vue'
 import { ref } from 'vue';
 
 const portfolioPieces = ref([
-      { id: 1, title: 'The Best Things to Do', description: 'A VueJS website that lets users compare different items and their negative effects', image: '/coding-1.jpg' },
-      { id: 2, title: 'Proof of concept', description: 'A mockup of a website made in Figma', image: '/coding-2.jpg' },
-      { id: 4, title: 'Portfolio', description: 'This website!', image: '/coding-4.jpg' },
+      { id: 1, title: 'The Best Things to Do', description: 'A VueJS website that lets users compare different items and their negative effects', image: '/Picture1.png', link: 'https://github.com/KierAnon/SIT-120-task-3.1D'},
+      { id: 2, title: 'Proof of concept', description: 'A mockup of a website made in Figma', image: '/design-1.png', link: 'https://github.com/KierAnon/SIT-120-task-3.1D' },
+      { id: 4, title: 'Portfolio', description: 'This website!', image: '/portfolio.png', link: 'https://github.com/KierAnon/SIT-120-task-1.3p' },
+      { id: 4, title: 'To-Do App', description: 'This website!', image: '/to-do.png', link: 'https://github.com/KierAnon/SIT-120-task-2.1C/tree/main/todo-app' },
       // ... add more example data
     ])
 
@@ -20,7 +21,7 @@ const portfolioPieces = ref([
   </div>
 </template>
 
-<style>
+<style scoped>
 /* Main portfolio container */
 #portfolio-container {
   display: flex;

@@ -14,11 +14,13 @@ const { data } = defineProps({
 
 <template>
   <div class="portfolio-piece">
-    <img :src="data.image" :alt="data.title" />
-    <h2>{{ data.title }}</h2>
-    <p>{{ data.description }}</p>
+    <a :href="data.link">
+        <img :src="data.image" :alt="data.title" />
+        <h2>{{ data.title }}</h2>
+        <p>{{ data.description }}</p>
+    </a>
   </div>
-  </template>
+</template>
   
   <style scoped>
 .portfolio-piece {
@@ -36,6 +38,11 @@ const { data } = defineProps({
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
 }
 
 img {

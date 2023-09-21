@@ -18,7 +18,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </template>
 
-<style>
+<style scoped>
 /* Overall app container */
 #app-container {
   font-family: 'Arial', sans-serif;
